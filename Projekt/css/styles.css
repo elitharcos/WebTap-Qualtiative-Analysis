@@ -1,0 +1,48 @@
+body{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+}
+
+div.potential_reaction{
+    /*This is where you can decide how to make the reaction look like.*/
+    border-radius: 10px;
+    border: 4px solid black;
+    margin: 0.5%;
+    padding: 0.5%;
+    position: center;
+    display: inline-block;
+}
+
+div.potential_reaction_container{
+    /*This is where you can decide how the columning works and other things for the div of the reaction*/
+    justify-content: center;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 20%); /* This creates equal-width columns */
+    grid-gap: 10px; /* Adjust the gap between elements as needed */
+  }
+
+img.imageReaction{
+    margin: 3%;
+    float: right;
+}
+
+.select_chem_format{
+    width: 100%;
+}
+
+div.query_forms{
+    /*Adjust divs here, very important, as this is where you can decide how the forms looks like*/
+}
+
+.svgChemCounter{
+    border-radius: 25px;
+    border: 1px solid black;
+}
+
+@media only screen and (max-width: 1200px) {
+    div.potential_reaction_container{
+        display: inline-block;
+    }
+  }
