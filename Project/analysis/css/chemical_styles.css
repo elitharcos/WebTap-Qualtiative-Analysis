@@ -1,0 +1,122 @@
+body{
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 1%; 
+}
+
+div.potential_reaction{
+	/*This is where you can decide how to make the reaction look like.*/
+	background-color: rgba(50, 50, 50, 0.75); /*PICTURE HERE INSTEAD*/
+	border-radius: 10px;
+	border: 4px solid black;
+	margin: 0.5%;
+	padding: 0.5%;
+	position: center;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	padding: 5%;
+	padding-bottom: 35%;
+}
+div.potential_reaction_text{
+	text-align: left;
+	overflow: hidden;
+}
+
+div.potential_reaction_container{
+	/*This is where you can decide how the columning works and other things for the div of the reaction*/
+	justify-content: center;
+	margin: auto;
+	display: grid;
+	margin-left: 5%;
+	margin-right: 5%;
+	grid-template-columns: repeat(4, 25%); /* This creates equal-width columns */
+	grid-gap: 10px; /* Adjust the gap between elements as needed */
+  }
+
+img.imageReaction{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	display: block;
+	width: 20%;
+	margin: 3%;
+}
+
+img.imageReaction:hover{
+	border: 2px solid red;
+}
+
+img.imageReaction:active{
+	border: 1px solid orange;
+}
+
+.select_chem_format{
+	width: 50%;
+}
+
+label{
+
+}
+
+div.query_forms{
+	/*Adjust divs here, very important, as this is where you can decide how the forms looks like*/
+}
+
+.svgChemCounter{
+	border-radius: 25px;
+	border: 1px solid black;
+}
+
+@media only screen and (max-width: 1355px) {
+
+	.select_chem_format{
+		width: 100% !important;
+	}
+
+	div.potential_reaction_container{
+		/*This is where you can decide how the columning works and other things for the div of the reaction*/
+		font-size: medium;
+		justify-content: center;
+		margin: auto;
+		margin-left: 5%;
+		margin-right: 5%;
+		display: grid;
+		grid-template-columns: repeat(2, 50%); /* This creates equal-width columns */
+		grid-gap: 10px; /* Adjust the gap between elements as needed */
+	}
+
+	img.imageReaction{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		display: block;
+		width: 33%;
+		margin: 3%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	div.potential_reaction_container{
+		/*This is where you can decide how the columning works and other things for the div of the reaction*/
+		font-size: medium;
+		justify-content: center;
+		margin: auto;
+		margin-left: 5%;
+		margin-right: 5%;
+		display: grid;
+		grid-template-columns: repeat(1, 100%); /* This creates equal-width columns */
+		grid-gap: 10px; /* Adjust the gap between elements as needed */
+		overflow: hidden;
+	}
+
+	img.imageReaction{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		display: block;
+		width: 33%;
+		margin: 3%;
+		overflow: hidden;
+	}
+}

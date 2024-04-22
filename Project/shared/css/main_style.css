@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html{
+    min-width: 90vw !important;
+    min-height:  90vh !important;
+    margin: auto;
+}
+#vantaBackground{
+    min-width: 90vw !important;
+    min-height:  90vh !important;
+}
+
+.vanta-canvas {
+    height: 100% !important;
+    width: 100% !important;
+    min-height: 100vh !important;
+    min-width: 100vw !important;
+    position: fixed !important;
+}
+
+.center {
+    min-height: 85vh;
+    margin: 2% auto 5%;
+    width: 80%;
+    border: 6px solid rgba(42, 157, 140, 0.63);
+    border-radius: 10px;
+    padding: 0px 10px 10px;
+    background-color: rgba(7, 57, 40, 0.80);
+    opacity: 2;
+    text-align: center;
+    color: whitesmoke;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    background-image: url("/Projekt/main_page/mainBackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: top;
+    min-height: 100vh;
+}
+
+.topnav {
+    background-color: #04AA6D;
+    overflow: hidden;
+    border-radius: 0px 0px 5px 5px;
+    width: 80%;
+    margin: 0% auto 2%;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #57BBE0;
+    color: black;
+}
+
+.topnav a.split {
+    float: right;
+    background-color: #04AA6D;
+    color: white;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ed8442;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+p,
+h3,
+h2 {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h3 {
+    margin-top: 10%;
+}
+
+.welcomeMessage{
+    text-align: left;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3[class="welcomeMessage"]{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 1355px) {
+
+    *{
+        overflow-wrap: break-word;
+    }
+
+    .center {
+        margin: auto;
+        margin-top: 16px;
+        /*width: 55%;*/
+        border: 6px solid rgba(42, 157, 140, 0.63);
+        border-radius: 10px;
+        padding: 0px 10px 10px;
+        background-color: rgba(7, 57, 40, 0.80);
+        opacity: 2;
+        text-align: center;
+        color: whitesmoke;
+        overflow: auto;
+    }
+
+    .topnav a {
+		width: 100% !important;
+	}
+	.dropdown {
+		width: 100% !important;
+	}
+
+	.dropdown .dropbtn {
+		width: 100% !important;
+	}
+
+	.dropdown-content {
+		position: relative;
+		min-width: 100%;
+		border-radius: 0px;
+	}
+
+    .forumPost *{
+        width: 100%;
+    }
+    .welcomeMessage{
+    	width: 100%;
+	text-align: justify;
+    }
+}

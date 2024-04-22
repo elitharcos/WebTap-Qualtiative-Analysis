@@ -1,0 +1,209 @@
+.center {
+	margin-bottom: 5%;
+	border: 6px solid rgba(42, 157, 140, 0.63);
+	border-radius: 10px;
+	padding: 10px;
+	background-color: rgba(7, 57, 40, 0.80);
+	opacity: 2;
+	text-align: center;
+	color: whitesmoke;
+	overflow: auto;
+}
+
+body {
+	background-image: url("/Projekt/main_page/mainBackground.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	margin-bottom: 128px;
+}
+
+.topnav {
+    background-color: #04AA6D;
+    overflow: hidden;
+    border-radius: 5px;
+    z-index: 1;
+} 
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  .topnav a:hover {
+    background-color: #57BBE0;
+    color: black;
+}
+  .topnav a.split {
+    float: right;
+    background-color: #04AA6D;
+    color: white;
+}
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ed8442;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.dropdown-content > a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    position: relative;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+} 
+.dropdown {
+    float: right;
+    overflow: hidden;
+    position: static !important;
+}
+
+p,
+h3,
+h2 {
+	text-shadow: 2px 2px 4px #000000;
+}
+
+h3 {
+	margin-top: 10%;
+}
+
+label {
+	margin-top: 0.5%;
+}
+
+.lblSelects {
+	width: 50%;
+	text-align: right;
+}
+
+.lblButtons {
+	width: 50%;
+}
+
+.labelsAndSelects {
+	margin-top: 1%;
+	width: 100%;
+	display: inline-flex;
+	flex-direction: row;
+	gap: 1%;
+}
+
+.formStyle {
+	margin: auto;
+}
+
+.caret {
+	visibility: hidden;
+}
+
+.dropdown-menu {
+	position: relative;
+	top: 0%;
+	width: 100%;
+}
+
+input {
+	color: black;
+	border-radius: 10px;
+}
+
+.submitButtonsProjekt {
+	margin: auto;
+	width: 50%;
+	text-align: left;
+}
+
+@media only screen and (max-width: 1355px) {
+
+	.center{
+		width: 85%;
+	}
+
+	.lblSelects {
+		width: 100%;
+		text-align: left;
+	}
+
+	.formStyle {
+		width: 100%;
+		margin: auto;
+	}
+
+	.labelsAndSelects {
+		padding: 1%;
+		border: 3px solid black;
+		border-radius: 5px;
+	}
+
+	.labelsAndSelects {
+		margin-top: 1%;
+		width: 100%;
+		display: inline-flex;
+		flex-direction: column;
+		gap: 1%;
+		overflow: hidden;
+	}
+
+	.labelsAndSelects button {
+		width: 100% !important;
+	}
+
+	.topnav a {
+		width: 100% !important;
+	}
+	.dropdown {
+		width: 100% !important;
+	}
+
+	.dropdown .dropbtn {
+		width: 100% !important;
+	}
+
+	.dropdown-content {
+		position: relative;
+		min-width: 100%;
+		border-radius: 0px;
+	}
+	/*
+	#showChemicalValuesParagraph{
+		border: 2px solid black;
+		border-radius: 5px;
+		overflow: auto;
+		padding: 3%;
+		padding-bottom: 16px;
+	}
+	*/
+}

@@ -1,0 +1,82 @@
+*{
+	color: white;
+	font-size: 17px;
+	/*box-sizing: content-box;*/
+}
+
+.vanta-canvas {
+	height: 100% !important;
+	width: 100% !important;
+	min-height: 100vh !important;
+	min-width: 100vw !important;
+	position: fixed !important;
+}
+
+body{
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 100vh;
+}
+
+.frm{
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+}
+
+.frm input{
+	/*width: 100%;*/
+	padding: 15px;
+	border: 6px solid rgba(42, 157, 140, 0.63);
+	border-top: 0px;
+	background-color:rgba(7, 57, 40, 0.80);
+	box-sizing: content-box;
+}
+
+.frm input:focus{
+	outline: none;
+}
+
+.frm input:first-child{
+	border-top: 6px solid rgba(42, 157, 140, 0.63);
+	border-radius: 10px 10px 0px 0px;
+}
+
+.frm input:last-child{
+	background-color: #04AA6D;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.hcolor:hover{
+	background-color: #15ce8a;
+}
+
+.container{
+	margin-top: 50px;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.btn{
+	text-decoration: none;
+	text-align: center;
+	padding: 5px 15px;
+	/*width: 100%;*/
+	border: 6px solid rgba(42, 157, 140, 0.63);
+	border-top: 0px;
+	background-color:rgba(7, 57, 40, 0.85);
+	border-radius: 0px 0px 10px 10px;
+}
+
+.center *{
+	white-space: normal;
+}
+
+@media only screen and (max-width: 1200px) {
+	*{
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,1 @@
+$("#nav-box").load("/Projekt/navbar.php");
